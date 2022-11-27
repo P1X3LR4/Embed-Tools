@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="pt_BR">
   <head>
     <meta charset="utf-8" />
     <title>Digital Clock With Date</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <style>
       * {
         margin: 0;
@@ -15,18 +19,31 @@
         justify-content: center;
         align-items: center;
         background: #191919;
+        border: 3px solid #2e94e3;
+        border-radius: 5px;
       }
 
       .datetime {
         color: #fff;
         background: #191919;
         font-family: "Segoe UI", sans-serif;
-        width: 340px;
+        width: 100%;
         padding: 15px 10px;
-        border: 3px solid #2e94e3;
-        border-radius: 5px;
-        transition: 0.5s;
-        transition-property: background, box-shadow;
+      }
+      @media (min-width: 720px) {
+        .datetime {
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          align-items: center;
+          flex-grow: inherit;
+          justify-content: center;
+          flex-wrap: nowrap;
+        }
+
+        .item {
+          flex: 1 0 auto;
+        }
       }
 
       .date {
@@ -70,14 +87,15 @@
   <body onload="initClock()">
     <!--digital clock start-->
     <div class="datetime">
-      <div class="date">
+      <div class="date item">
         <span id="dayname">Day</span>
       </div>
-      <div class="time">
+      <div class="time item">
         <span id="hour">00</span>: <span id="minutes">00</span>
         <span id="seconds">00</span>
       </div>
-      <div class="date blue-date">
+      <div class="date blue-date item">
+        <i class="uil uil-calendar-alt"></i>
         <span id="daynum">00</span>
         <span id="month">Month</span>
         <span id="year">Year</span>
