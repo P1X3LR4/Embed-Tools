@@ -40,7 +40,9 @@
           justify-content: center;
           flex-wrap: nowrap;
         }
-
+        .blue-date, .date {
+          font-size: 15pt !important;
+        }
         .item {
           flex: 1 0 auto;
         }
@@ -116,7 +118,7 @@
         if (hou == 0) {
           hou = 24;
         }
-        if (hou > 24) {
+        if (hou > 12) {
           hou = hou - 24;
         }
 
