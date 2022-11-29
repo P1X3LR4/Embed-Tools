@@ -119,7 +119,7 @@
           hou = 24;
         }
         if (hou > 12) {
-          hou = (hou - 12)+12
+          hou = hou - 12;
         }
 
         Number.prototype.pad = function (digits) {
