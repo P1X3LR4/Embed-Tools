@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Digital Clock With Date</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Khand:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      body .container {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      body .container .line_left, body .container .line_right {
+        width: 100%;
+        height: 20%;
+        background: #f7a700;
+      }
+
+      body .container .main_text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background: #f7a70033;
+      }
+      body .container .main_text .main_text_title {
+        color: #f7a700;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        letter-spacing: 4px;
+        font-size: 15pt;
+        font-style: normal;
+        line-height: normal;
+      }
+      /* 
+      @media (min-width: 720px) {
+        body .text_content {
+          font-size: larger;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="line_left"></div>
+      <div class="main_text">
+        <span class="main_text_title">VISÃO GERAL DE TAREFAS</span>
+      </div>
+      <div class="line_right"></div>
+    </div>
+  </body>
+</html>
